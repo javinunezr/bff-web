@@ -11,25 +11,32 @@ Este es un proyecto Backend for Frontend (BFF) desarrollado con Spring Boot que 
 
  **La aplicación estará disponible en:**
    ```
-   http://localhost:8091/bff
+   http://localhost:8091/bff-web
    ```
 
 ## 📡 Endpoints
 
 ### Transacciones
 
-- **GET** `/bff` - Obtener todas las transacciones
+- **GET** `/bff-web` - Obtener todas las transacciones
 
+http://localhost:8091/bff-web/transaction
 
 ### AnnualAccounts
 
+- **GET** `/bff-web` - Obtener todas las cuentas anuales
+
+http://localhost:8091/bff-web/annual-account
 
 ### Interest
 
+- **GET** `/bff-web` - Obtener todos los intereses
+
+http://localhost:8091/bff-web/interest
 
 ### Microservicio de Transacciones
 
 El BFF está configurado para consumir un microservicio en:
 ```
-http://localhost:8090/api/transactions
+http://localhost:8090/backend/api
 ```
